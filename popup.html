@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./popup.css" />
+    </head>
+    <body>
+        <template id="li_template">
+            <li>
+                <a>
+                    <h3>Tab Title</h3>
+                    <p>Tab Pathname</p>
+                </a>
+            </li>
+        </template>
+
+        <h1>tabless.ai</h1>
+
+        <button id="saveTabsButton">save tabs & close window</button>
+        <button id="viewTabsButton">view your saved windows</button>
+        <button id="viewGroupsButton">view groups</button>
+
+        <div id="tabsContainer">
+            <ul id="tabsList"></ul>
+        </div>
+
+        <div id="savedGroupsContainer" style="display: none;">
+            <ul id="savedGroupsList"></ul>
+        </div>
+
+
+        <!-- Confirmation Modal -->
+        <div id="confirmationModal" class="modal" style="display: none;">
+            <div class="modal-content">
+            <p>Are you sure you want to close and save all tabs/groups in this window?</p>
+            <div class="modal-buttons">
+                <button id="modalYesButton">Yes</button>
+                <button id="modalNoButton">No</button>
+            </div>
+            </div>
+        </div>
+
+        <script src="dexie.min.js"></script>
+        <script src="popup.js"></script>
+    </body>
+</html>
+

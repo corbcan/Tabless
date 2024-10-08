@@ -1,0 +1,199 @@
+body {
+    min-width: 250px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    color: white; /* Set default text color to white */
+    background-color: #4B3621; /* Change background to #4B3621 */
+}
+
+h1 {
+    text-align: center;
+    color: white; /* Set header text color to white */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #F3DAD7; /* Change button background color */
+    color: #4B3621; /* Change button text color to #4B3621 */
+    border: none; /* Remove default button border */
+}
+
+#saveTabsButton,
+#viewTabsButton,
+#viewGroupsButton {
+    font-size: 16px;
+}
+
+#tabsContainer {
+    display: none;
+}
+
+#tabsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.session-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #F3DAD7; /* Change border color */
+    padding-bottom: 5px;
+}
+
+.session-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.session-name {
+    font-weight: bold;
+    color: white; /* Change text color to white */
+    cursor: pointer;
+}
+
+.session-buttons {
+    display: flex;
+}
+
+.session-buttons button {
+    flex: 1;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    width: auto;
+    background-color: #F3DAD7; /* Change button background color */
+    color: #4B3621; /* Change button text color */
+    border: none; /* Remove default button border */
+}
+
+.session-buttons button:first-child {
+    margin-left: 0;
+}
+
+.session-buttons .delete-button {
+    width: 30px;
+}
+
+.session-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center child elements horizontally */
+}
+
+.open-button {
+    width: auto; /* Let the content determine the width */
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    background-color: #F3DAD7; /* Change button background color */
+    color: #4B3621; /* Change button text color */
+    border: none;
+}
+
+.tabs-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.tabs-list li {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.tabs-list li a {
+    text-decoration: none;
+    color: white; /* Change link text color to white */
+}
+
+.tabs-list li a:hover {
+    text-decoration: underline;
+    color: #F3DAD7; /* Change hover color */
+}
+
+.small-button {
+    padding: 5px;
+    font-size: 12px;
+    background-color: #F3DAD7; /* Change button background color */
+    color: #4B3621; /* Change button text color */
+    border: none;
+}
+
+.group-name {
+    font-weight: bold;
+    cursor: pointer;
+    list-style-type: disc;
+    color: white; /* Change text color to white */
+}
+
+.group-tabs-list {
+    list-style-type: circle;
+    font-weight: lighter;
+    padding-left: 20px;
+}
+
+.tabs-list > li {
+    margin-bottom: 5px;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it overlays other elements */
+}
+
+.modal-content {
+    background-color: #4B3621; /* Change background color */
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+    text-align: center;
+    color: white; /* Change text color to white */
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    margin: 0 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #F3DAD7; /* Change button background color */
+    color: #4B3621; /* Change button text color */
+    border: none;
+}
+
+/* Styles for the group header containing the group name and Open Group button */
+.group-item .group-header {
+    display: flex;
+    align-items: center; /* Align items to the start */
+}
+
+.group-name {
+    font-weight: bold;
+    cursor: pointer;
+    color: white; /* Change text color to white */
+}
+
+.open-group-button {
+    padding: 2px;
+    font-size: 9px; /* Adjust font size as needed */
+    margin-left: 5px; /* Adjust spacing between name and button */
+    width: auto; /* Let the content determine the width */
+    background-color: #F3DAD7; /* Change button background color */
+    color: #4B3621; /* Change button text color */
+    border: none;
+}
